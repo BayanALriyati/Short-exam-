@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        #div1 {
+            border: 1px solid black;
+            display: flex;
+            justify-content: space-evenly;
+            height: 5vh;
+            width: 60%;
+            margin: 5px auto;
+            padding: 15px;
+            font-size: 30px;
+        }
+		#div2 {
+            
+            display: flex;
+            justify-content: space-evenly;
+            height: 5vh;
+            width: 60%;
+            margin: 5px auto;
+            padding: 15px;
+            font-size: 30px;
+        }
+		#div3 {
+            
+            display: flex;
+            justify-content: space-evenly;
+            height: 5vh;
+            width: 20%;
+            margin: 5px auto;
+            padding: 15px;
+            font-size: 30px;
+        }
+        #rem {
+            text-align: center;
+        }
+        #t {
+            border: 2px double red ;
+        }
+        table, th, td {
+        border: 1px solid;
+       }
+    </style>
+</head>
+<body onload="FillOP()">
+    <h1> your order </h1>
+    <div id="div1">
+        <div><label> Customer Name </label>
+        <input type="text" id="customer"></div>
+        <div id="menu">
+		<label for="mnu"></label>
+ 
+    <select  id="mnu" >
+	
+    </select>
+	
+	</div>
+        <div><button id="askch" onclick="ask()">ask for cheif</button></div>
+    
+	
+    </div>
+	
+	<br>
+	<div  id="rem"> 
+	<button id="DelTbl" onclick="DTbl()">Remove table content</button>
+	</div>
+	
+	     <div id="div2">
+		 
+	<table   id="t" >
+    <thead class="thead-dark">
+    <tr>
+      <th scope="col">Order Image</th>
+      <th scope="col">Customer  Name </th>
+      <th scope="col">Food Type</th>
+	  <th scope="col">Payment</th>
+    </tr>
+    </thead>
+    <tbody id="tableBody">
+                                 
+    </tbody>
+    </table>
+	</div>
+	
+    <script src="main.js"></script>
+    
+</body>
+</html>       

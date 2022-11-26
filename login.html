@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+          width: 100%;
+          height: 100vh;
+          background-image: url(food.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          text-align: center;
+      }
+      form {
+          position: absolute;
+          top : 50%;
+          left : 50%;
+          transform: translate(-50% , -50%);
+          width: 30em;
+          height:em;
+          background: rgba(254, 252, 252, 0.7);
+          border-radius:1em;
+          box-sizing:border-box ;
+      }
+      h1{
+          color: rgb(22, 11, 11);
+          text-align: center;
+          margin-top: 2em;
+          margin-bottom: 1em;
+      }
+      input {
+          border : none;
+          width:25em;
+          height: 2em;
+          border: 0.1em solid;
+          background: #fff ;
+          padding: .6em;
+          color : rgb(22, 11, 11);
+          text-align: center;
+      }
+        #inLogin{
+            top : 60em ;
+            left : 11.5em;
+            width: 10.1em;
+            height: 3.18em ;
+            background: #73777b;
+            border: none ;
+            color :rgb(22, 11, 11);
+            font-weight: bolder;
+            border-radius: .9em;
+            font-size: .9em;
+            margin-bottom: 10PX;
+        }
+        #inLogin:hover{
+            background: #fff;
+            color:rgb(22, 11, 11);
+            cursor: pointer;
+        }
+  </style>
+</head>
+<body>
+    <form id="loginForm">
+
+        <h1>login</h1>
+    <div>
+        <input id="Loginemail" type="text" placeholder="Your email">
+     <p id="login1"></p>   
+    </div>
+    
+    <div>
+        <input id="LoginPassword" type="password" placeholder="Enter password">
+    <p id="login2"></p>
+    </div>
+    
+    
+        <input  id="inLogin" type="button" value="login" onclick="check()">
+</form>
+
+
+<script src="./signup_login.js"></script>
+</body>
+</html>
